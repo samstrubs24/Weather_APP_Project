@@ -73,3 +73,9 @@ li {
 .celsius:hover {
   text-decoration: none;
 }
+
+small {
+  position: relative;
+  left: 255px;
+  bottom: 30px;
+}
