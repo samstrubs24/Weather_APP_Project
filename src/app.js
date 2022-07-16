@@ -4,14 +4,6 @@ let hours = date.getHours();
 if (hours < 10) {
   hours = `0${hours}`;
 }
-let hour = date.getHours();
-if (hour >= 12) {
-  hour = hours - 12;
-  hourTime = "PM";
-}
-if (hour < 0) {
-  h = 12;
-}
 
 let minutes = date.getMinutes();
 if (minutes < 10) {
@@ -20,7 +12,7 @@ if (minutes < 10) {
 let days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
 let day = days[date.getDay()];
 let dateElement = document.querySelector("#update");
-dateElement.innerHTML = ` Last updated:${day}, ${hour}: ${minutes} ${hourTime}`;
+dateElement.innerHTML = ` Last updated:${day}, ${hours}: ${minutes}`;
 
 function displayTemperature(response) {
   console.log(response.data);
