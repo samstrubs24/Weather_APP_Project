@@ -76,6 +76,56 @@ li {
 
 small {
   position: relative;
-  left: 255px;
-  bottom: 30px;
+  left: -20px;
+  bottom: -45px;
+}
+
+.weather-forecast {
+  text-align: center;
+  position: relative;
+  bottom: -20px;
+}
+
+.Mon-forecast {
+  font-size: 14px;
+  color: rgb(186, 186, 186);
+}
+
+.Tues-forecast {
+  font-size: 14px;
+  color: rgb(186, 186, 186);
+}
+
+.Wed-forecast {
+  font-size: 14px;
+  color: rgb(186, 186, 186);
+}
+
+.Thurs-forecast {
+  font-size: 14px;
+  color: rgb(186, 186, 186);
+}
+
+.Fri-forecast {
+  font-size: 14px;
+  color: rgb(186, 186, 186);
+}
+
+.Sat-forecast {
+  font-size: 14px;
+  color: rgb(186, 186, 186);
+}
+
+.Sun-forecast {
+  font-size: 14px;
+  color: #bababa;
+}
+
+.Min-temp {
+  opacity: 0.6;
+  font-size: 12px;
+}
+
+.Max-temp {
+  font-size: 12px;
 }

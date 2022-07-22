@@ -48,6 +48,8 @@ function handle(event) {
   search(cityInput.value);
 }
 
+//bonus - fahrenheit/celsius conversion
+
 function displayFahrenTemp(event) {
   event.preventDefault();
   celsiusLink.classList.remove("celsius");
@@ -75,3 +77,28 @@ fahrenLink.addEventListener("click", displayFahrenTemp);
 
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
+
+//Java for forecast loop
+
+function displayForecast() {
+  let weatherForecast = document.querySelector("#weather-forecast");
+  let weatherHTML = `<div class = "row">`;
+  let dayz = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+  dayz.forEach(function (day) {
+    weatherHTML =
+      weatherHTML +
+      `
+  <div class = "col-2">
+  <div class = "Mon-forecast"> ${day} </div>
+    <div>
+ <img src = "https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt = "cloudy" class = "weather-cloudy-icon" width = 45px;/> </div>
+   <span class = "Max-temp"> 75&deg; </span><span class = "Min-temp"> 35&deg;</span>
+  </div>
+
+  `;
+  });
+  weatherHTML = weatherHTML + `</div>`;
+  weatherForecast.innerHTML = weatherHTML;
+}
+
+displayForecast();
